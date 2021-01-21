@@ -1,17 +1,20 @@
-const products = [
+const donuts = [
   {
+    id: 1,
     name: "Fireworks Donut",
     price: 0.6,
     image:
       "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assorted-glazed-donut-royalty-free-image-905879330-1538167169.jpg",
   },
   {
+    id: 2,
     name: "Glazed Donut",
     price: 0.4,
     image:
       "https://myrepublica.nagariknetwork.com/uploads/media/donuts2_20200102135901.jpg",
   },
   {
+    id: 3,
     name: "Sugar Donut",
     price: 0.5,
     image:
@@ -19,4 +22,4 @@ const products = [
   },
 ];
 
-export default products;
+export default donuts;
