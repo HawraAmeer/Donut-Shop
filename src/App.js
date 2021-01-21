@@ -1,15 +1,21 @@
-import styles from "./styles";
+import { GlobalStyle } from "./styles";
 import Home from "./components/Home";
 import DonutList from "./components/DonutList";
+import { ThemeProvider } from "styled-components";
+
+const theme = {
+  mainColor: "maroon", // main font color
+  backgroundColor: "pink", // main background color
+  otherColor: "brown",
+};
 
 function App() {
   return (
-    <div style={styles.body}>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <Home />
-      <div style={styles.list}>
-        <DonutList />
-      </div>
-    </div>
+      <DonutList />
+    </ThemeProvider>
   );
 }
 

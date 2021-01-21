@@ -1,4 +1,4 @@
-import styles from "../styles";
+import { List } from "../styles";
 import donuts from "../donuts";
 import DonutItem from "./DonutItem";
 
@@ -7,7 +7,7 @@ const DonutList = () => {
     <DonutItem key={donut.id} donut={donut} />
   ));
 
-  return <div style={styles.list}>{donutList}</div>;
+  return <List>{donutList}</List>;
 };
 
 export default DonutList;
